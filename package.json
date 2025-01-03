@@ -1,0 +1,17 @@
+{
+  "name": "documentation-web",
+  "version": "1.0.0",
+  "description": "My Project",
+  "main": "index.js",
+  "scripts": {
+
+    "build-less": "lessc src/styles/less/styles.less src/styles/css/styles.css",
+    "w-less": "chokidar \"src/styles/less/**/*.less\" -c \"npm run build-less\""
+  },
+  "dependencies": {
+    "less": "^4.2.0"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0"
+  }
+}

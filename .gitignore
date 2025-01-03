@@ -1,0 +1,10 @@
+node_modules/
+
+# MYNOTES Ignores the file.
+MYNOTES.md
+
+# If you are using SASS, committing CSS files to github is unnecessary.
+src/styles/css/
+# Bootstrap ignores non-minified files.
+src/assets/vendor/bootstrap/bootstrap.css
+src/assets/vendor/bootstrap/bootstrap.js
