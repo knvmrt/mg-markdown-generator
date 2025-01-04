@@ -8,67 +8,39 @@
     <meta name="description" content="MG web markdown generator.">
     <meta name="author" content="KNVMRT">
     <link rel="icon" type="../assets/img/logo.svg" href="../assets/img/logo.svg">
-    <title>MG Markdown Generator</title>
+    <title>MG Markdown Generator | Home Page</title>
 
     <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <main class="my-container d-flex">
-            <div class="logo">
-                <a href="#" title="MG Markdown Generator">
-                    <img src="../assets/img/logo.svg" alt="Logo">
-                </a>
-            </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="https://knvmrt.vercel.app/" target="_blank">by knvmrt</a></li>
-                </ul>
+
+    <header id="sticky-header" class="d-flex">
+
+        <main class="container d-flex col-lg-12 col-md-12">
+
+            <div class="logo col-lg-2"><a href="#"><img src="../assets/img/Logo.svg" alt="MG Logo"></a></div>
+
+            <nav id="mobile-nav" class=" d-none d-md-flex col-lg-10 ">
+                <div class="navigations">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </div>
             </nav>
+            <div id="menu-toggle" class="d-md-none">
+                <img id="Open" class="d-flex" width="17px" src="../assets/img/bar-open.svg" alt="Open">
+                <img id="Close" class="d-flex d-none" width="17px" src="../assets/img/bar-close.svg" alt="Close">
+            </div>
         </main>
+
     </header>
 
-    <section id="MainSec">
-        <main class="my-container mt-3">
-            <div class="row">
-                <div class="side">
 
-                    <div id="mobile-buttons" class="d-md-none mb-3">
-                        <button id="markdown-btn" class="markdown-button">Markdown</button>
-                        <button id="preview-btn" class="preview-button">Preview</button>
-                    </div>
 
-                    <div class="row">
-
-                        <div id="markdown-section" class="col-md-6 d-md-block">
-                            <label for="Markdown">Markdown</label>
-
-                            <textarea id="markdown-input" class="form-control editor-textarea"
-                                placeholder="Type Markdown here..."></textarea>
-                        </div>
-
-                        <div id="preview-section" class="col-md-6 d-md-block" style="display: none;">
-                            <label for="Markdown">Preview</label>
-                            <div id="preview"></div>
-                        </div>
-                    </div>
-
-                    <div class="text-end mt-3">
-                        <span id="copyright" title="">
-                            <p>©</p>
-                        </span>
-                        <button id="download-btn" class="download-button">Download file</button>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
+    <!-- JavaScript Imports -->
     <script src="../scripts/js/index.js"></script>
     <script src="../assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
