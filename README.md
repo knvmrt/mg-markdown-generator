@@ -13,6 +13,10 @@
 ### Project Name:  MG Markdown Generator
 ### Project Description:  MG Markdown Generator a website where you can write and download markdown format.
 
+# 💡 Future Plans:
+
+**I’m not sure yet, but maybe one day I’ll implement it. Users will be able to import markdown files and make changes to them. This feature aims to provide a more efficient and practical experience.**
+
 ### Project structure:
 ```bash
 └── documentation-web
