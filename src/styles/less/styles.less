@@ -87,18 +87,24 @@ header {
 
       .left-side {
         .blob {
+          display: flex;
           justify-content: center;
           align-items: center;
           position: relative;
+          margin-bottom: 20px;
+          z-index: -1;
 
-          img {
-            position: absolute;
-            height: 300px;
-            display: inline;
+          .blob-svg {
+              width: 500px;
+          }
+
+          .blob-logo {
+              position: absolute;
+              height: 300px;
           }
 
 
-        }
+      }
       }
 
       .right-side {
@@ -106,7 +112,7 @@ header {
 
         .main-text {
           h1 {
-            font-size: 80px;
+            font-size: 83px;
             font-weight: bold;
             color: @secondary-color;
 
@@ -122,7 +128,7 @@ header {
               padding-right: 180px;
               color: @secondary-color;
               font-size: 20px;
-              line-height: 159%;
+              line-height: 160%;
             }
           }
         }
@@ -158,80 +164,7 @@ header {
 
 // + HOME PAGE MAIN SECTION ===================================
 
-
-footer {
-  display: flex;
-  background-color: @primary-bg-dark;
-  padding: 15px 0px;
-  // margin-bottom: 0px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-
-  main {
-    align-items: center;
-
-
-      .copyright {
-        span {
-          height: 40px;
-          width: 40px;
-          cursor: pointer;
-          display: flex;
-          font-size: 13px;
-          text-align: left;
-          background-color: @primary-bg-dark;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          border-radius: 50px;
-          border: 2px solid @primary-color;
-        }
-
-        p {
-          display: flex;
-          color: @secondary-color;
-          font-size: 30px;
-          font-weight: bold;
-          margin: 0px;
-          padding: 0px;
-          user-select: none;
-        }
-      }
-      .mg-logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .owner {
-        display: flex;
-        justify-content: flex-end;
-        span {
-          height: 40px;
-          width: 40px;
-          cursor: pointer;
-          display: flex;
-          background-color: @primary-bg-dark;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50px;
-          border: 2px solid @primary-color;
-
-          img {
-            height: 30px;
-            display: flex;
-            color: @secondary-color;
-            margin: 0px;
-            padding: 0px;
-            user-select: none;
-          }
-        }
-      
-    }
-  }
-}
-
+// + EDITOR PAGE ==============================================
 
 #MainSec {
 
@@ -347,3 +280,86 @@ footer {
     }
   }
 }
+// + EDITOR PAGE ==============================================
+
+// + FOOTER ===================================================
+
+footer {
+  display: flex;
+  background-color: @primary-bg-dark;
+  padding: 15px 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+  main {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+
+      .copyright {
+        span {
+          height: 40px;
+          width: 40px;
+          cursor: pointer;
+          display: flex;
+          font-size: 13px;
+          text-align: left;
+          background-color: @primary-bg-dark;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          border-radius: 50px;
+          border: 2px solid @primary-color;
+        }
+
+        p {
+          display: flex;
+          color: @secondary-color;
+          font-size: 30px;
+          font-weight: bold;
+          margin: 0px;
+          padding: 0px;
+          user-select: none;
+        }
+      }
+
+      .mg-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          height: 40px;
+        }
+      }
+
+      .owner {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-color: @primary-bg-dark;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 2px solid @primary-color;
+
+        img {
+          height: 20px;
+          display: flex;
+          color: @secondary-color;
+          margin: 0px;
+          padding: 0px;
+          user-select: none;
+        }
+
+
+      }
+    }
+  }
+}
+

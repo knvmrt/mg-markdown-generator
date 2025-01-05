@@ -1,131 +1,474 @@
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-            // HEADER
+    // HEADER
 
-            header {
-                background-color: @primary-bg-dark;
-        
-                main {
-                    justify-content: space-between;
-                    padding: 20px 50px;
-        
-                    .logo {
-                        align-items: center;
-        
-                        a {
-                            img {
-                                height: 40px;
-                            }
-                        }
+    header {
+        background-color: @primary-bg-dark;
+
+        main {
+            justify-content: space-between;
+            padding: 20px 50px;
+
+            .logo {
+                align-items: center;
+
+                a {
+                    img {
+                        height: 40px;
                     }
-        
-                    nav {
-                        display: flex;
-                        align-items: center;
-                        justify-content: end;
-        
-                        .navigations {
-                            ul {
-                                display: flex;
-                                list-style: none;
-                                margin: 0px;
-                                padding: 0px;
-        
-                                li {
-                                    font-size: 16px;
-                                    margin: 15px 0px 10px 40px;
-        
-                                    a {
-                                        font-weight: bold;
-                                        text-decoration: none;
-                                        color: @primary-color;
-                                        border-radius: 8px;
-                                        user-select: none;
-                                    }
-                                }
-                            }
-                        }
-        
-                    }
-        
-                    #menu-toggle {
-                        display: flex;
-                        align-items: center;
-                    }
-        
-                    
                 }
             }
-        
-            // HEADER
 
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: end;
 
+                .navigations {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        margin: 0px;
+                        padding: 0px;
 
+                        li {
+                            font-size: 16px;
+                            margin: 15px 0px 10px 40px;
 
-}
-
-@media (max-width: 992px){
-
-        // HEADER
-
-        header {
-            background-color: @primary-bg-dark;
-    
-            main {
-                justify-content: space-between;
-                padding: 20px 50px;
-    
-                .logo {
-                    align-items: center;
-    
-                    a {
-                        img {
-                            height: 40px;
-                        }
-                    }
-                }
-    
-                nav {
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-    
-                    .navigations {
-                        ul {
-                            display: flex;
-                            list-style: none;
-                            margin: 0px;
-                            padding: 0px;
-    
-                            li {
-                                font-size: 16px;
-                                margin: 15px 0px 10px 40px;
-    
-                                a {
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                    color: @primary-color;
-                                    border-radius: 8px;
-                                    user-select: none;
-                                }
+                            a {
+                                font-weight: bold;
+                                text-decoration: none;
+                                color: @primary-color;
+                                border-radius: 8px;
+                                user-select: none;
                             }
                         }
                     }
-    
                 }
-    
-                #menu-toggle {
+
+            }
+
+            #menu-toggle {
+                display: flex;
+                align-items: center;
+            }
+
+
+        }
+    }
+
+    // HEADER
+
+    // + HOME PAGE MAİN SEC ====================================
+
+    #HomeMainSec {
+        main {
+            padding-top: 90px;
+
+
+            .side {
+                display: flex;
+                align-items: center;
+
+                .left-side {
                     display: flex;
-                    align-items: center;
+
+                    .blob {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: 20px;
+                        z-index: -1;
+
+                        .blob-svg {
+                            width: 350px;
+                        }
+
+                        .blob-logo {
+                            position: absolute;
+                            height: 180px;
+                        }
+
+
+                    }
                 }
-    
-                
+
+                .right-side {
+                    margin-left: 50px;
+
+                    .main-text {
+                        h1 {
+                            font-size: 45px;
+                            font-weight: bold;
+                            color: @secondary-color;
+
+                            span {
+                                color: @primary-color;
+                                font-weight: bolder;
+                            }
+                        }
+
+                        .paragraph {
+
+                            p {
+                                padding-right: 35px;
+                                color: @secondary-color;
+                                font-size: 18px;
+                                line-height: 155%;
+                            }
+                        }
+                    }
+
+                    .url {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 50px;
+
+                        a {
+                            background-color: @primary-bg-dark;
+                            display: flex;
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 100px;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 30px;
+
+                            img {
+                                height: 25px;
+                                width: 25px;
+
+                            }
+
+                        }
+
+                    }
+                }
             }
         }
-    
-        // HEADER
+    }
 
 
+    // + HOME PAGE MAİN SEC ====================================
+
+
+    // + FOOTER 
+
+    footer {
+        background-color: @primary-bg-dark;
+        display: flex;
+        padding: 10px 0px;
+        width: 100%;
+        margin-top: 0px;
+
+        main {
+            flex-direction: column;
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+
+                .copyright {
+                    span {
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                        display: flex;
+                        text-align: left;
+                        background-color: @primary-bg-dark;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 50px;
+                        border: 2px solid @primary-color;
+                    }
+
+                    p {
+                        display: flex;
+                        color: @secondary-color;
+                        font-size: 30px;
+                        font-weight: bold;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+                }
+
+                .mg-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 40px;
+                    }
+                }
+
+                .owner {
+                    display: flex;
+                    height: 40px;
+                    width: 40px;
+                    cursor: pointer;
+                    background-color: @primary-bg-dark;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    border: 2px solid @primary-color;
+
+                    img {
+                        height: 20px;
+                        display: flex;
+                        color: @secondary-color;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    // HEADER
+
+    header {
+        background-color: @primary-bg-dark;
+
+        main {
+            justify-content: space-between;
+            padding: 20px 50px;
+
+            .logo {
+                align-items: center;
+
+                a {
+                    img {
+                        height: 40px;
+                    }
+                }
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                .navigations {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        margin: 0px;
+                        padding: 0px;
+
+                        li {
+                            font-size: 16px;
+                            margin: 15px 0px 10px 40px;
+
+                            a {
+                                font-weight: bold;
+                                text-decoration: none;
+                                color: @primary-color;
+                                border-radius: 8px;
+                                user-select: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            #menu-toggle {
+                display: flex;
+                align-items: center;
+            }
+
+
+        }
+    }
+
+    // HEADER
+
+    // + HOME PAGE MAİN SEC ====================================
+
+    #HomeMainSec {
+        main {
+            padding-top: 30px;
+
+
+            .side {
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+
+                .left-side {
+                    display: flex;
+
+                    .blob {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: 20px;
+                        z-index: -1;
+
+                        .blob-svg {
+                            width: 300px;
+                        }
+
+                        .blob-logo {
+                            position: absolute;
+                            height: 160px;
+                        }
+
+
+                    }
+                }
+
+                .right-side {
+                    margin-left: 60px;
+
+                    .main-text {
+                        h1 {
+                            font-size: 45px;
+                            font-weight: bold;
+                            color: @secondary-color;
+
+                            span {
+                                color: @primary-color;
+                                font-weight: bolder;
+                            }
+                        }
+
+                        .paragraph {
+
+                            p {
+                                padding-right: 35px;
+                                color: @secondary-color;
+                                font-size: 14px;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+
+                    .url {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 50px;
+
+                        a {
+                            background-color: @primary-bg-dark;
+                            display: flex;
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 100px;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 30px;
+
+                            img {
+                                height: 25px;
+                                width: 25px;
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    // + HOME PAGE MAİN SEC ====================================
+
+
+    // + FOOTER 
+
+    footer {
+        background-color: @primary-bg-dark;
+        display: flex;
+        padding: 10px 0px;
+        width: 100%;
+        margin-top: 0px;
+
+        main {
+            flex-direction: column;
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+
+                .copyright {
+                    span {
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                        display: flex;
+                        text-align: left;
+                        background-color: @primary-bg-dark;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 50px;
+                        border: 2px solid @primary-color;
+                    }
+
+                    p {
+                        display: flex;
+                        color: @secondary-color;
+                        font-size: 30px;
+                        font-weight: bold;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+                }
+
+                .mg-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 40px;
+                    }
+                }
+
+                .owner {
+                    display: flex;
+                    height: 40px;
+                    width: 40px;
+                    cursor: pointer;
+                    background-color: @primary-bg-dark;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    border: 2px solid @primary-color;
+
+                    img {
+                        height: 20px;
+                        display: flex;
+                        color: @secondary-color;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+
+
+                }
+
+            }
+
+        }
+    }
 
 }
 
@@ -191,6 +534,7 @@
                 position: absolute;
                 align-items: flex-start;
                 justify-content: center;
+                box-shadow: 0px 5px 10px 5px #00000088;
 
                 height: 15%;
                 width: 100%;
@@ -230,6 +574,102 @@
     }
 
     // HEADER
+
+    // + HOME PAGE MAİN SEC ====================================
+
+    #HomeMainSec {
+        main {
+            padding-top: 30px;
+
+
+            .side {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                top: 0px;
+
+                .left-side {
+                    display: flex;
+
+                    .blob {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: 20px;
+                        z-index: -1;
+
+                        .blob-svg {
+                            width: 250px;
+                        }
+
+                        .blob-logo {
+                            position: absolute;
+                            height: 130px;
+                        }
+
+
+                    }
+                }
+
+                .right-side {
+                    margin-left: 10px;
+
+                    .main-text {
+                        h1 {
+                            font-size: 40px;
+                            font-weight: bold;
+                            color: @secondary-color;
+
+                            span {
+                                color: @primary-color;
+                                font-weight: bolder;
+                            }
+                        }
+
+                        .paragraph {
+
+                            p {
+                                padding-right: 35px;
+                                color: @secondary-color;
+                                font-size: 14px;
+                                line-height: 130%;
+                            }
+                        }
+                    }
+
+                    .url {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 50px;
+
+                        a {
+                            background-color: @primary-bg-dark;
+                            display: flex;
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 100px;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 30px;
+
+                            img {
+                                height: 25px;
+                                width: 25px;
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    // + HOME PAGE MAİN SEC ====================================
+
 
 
     #MainSec {
@@ -342,13 +782,91 @@
             }
         }
     }
+
+    // + FOOTER 
+
+    footer {
+        background-color: @primary-bg-dark;
+        display: flex;
+        padding: 10px 0px;
+        width: 100%;
+        margin-top: 0px;
+
+        main {
+            flex-direction: column;
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+
+                .copyright {
+                    span {
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                        display: flex;
+                        text-align: left;
+                        background-color: @primary-bg-dark;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 50px;
+                        border: 2px solid @primary-color;
+                    }
+
+                    p {
+                        display: flex;
+                        color: @secondary-color;
+                        font-size: 30px;
+                        font-weight: bold;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+                }
+
+                .mg-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 40px;
+                    }
+                }
+
+                .owner {
+                    display: flex;
+                    height: 40px;
+                    width: 40px;
+                    cursor: pointer;
+                    background-color: @primary-bg-dark;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    border: 2px solid @primary-color;
+
+                    img {
+                        height: 20px;
+                        display: flex;
+                        color: @secondary-color;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+
+
+                }
+
+            }
+
+        }
+    }
 }
 
 @media (max-width: 576px) {
 
     // HEADER
-
-
     header {
         background-color: @primary-bg-dark;
 
@@ -372,7 +890,6 @@
                 justify-content: end;
 
                 .navigations {
-
                     ul {
                         display: flex;
                         list-style: none;
@@ -408,6 +925,7 @@
                 position: absolute;
                 align-items: flex-start;
                 justify-content: center;
+                box-shadow: 0px 5px 10px 5px #00000088;
 
                 height: 15%;
                 width: 100%;
@@ -447,7 +965,103 @@
 
     // HEADER
 
+    // + HOME PAGE MAİN SEC ====================================
 
+    #HomeMainSec {
+        main {
+            padding-top: 30px;
+
+
+            .side {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                top: 0px;
+
+                .left-side {
+                    display: flex;
+
+                    .blob {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: 20px;
+                        z-index: -1;
+
+                        .blob-svg {
+                            width: 200px;
+                        }
+
+                        .blob-logo {
+                            position: absolute;
+                            height: 100px;
+                        }
+
+
+                    }
+                }
+
+                .right-side {
+                    margin-left: 10px;
+
+                    .main-text {
+                        h1 {
+                            font-size: 30px;
+                            font-weight: bold;
+                            color: @secondary-color;
+
+                            span {
+                                color: @primary-color;
+                                font-weight: bolder;
+                            }
+                        }
+
+                        .paragraph {
+
+                            p {
+                                padding-right: 35px;
+                                color: @secondary-color;
+                                font-size: 12px;
+                                line-height: 120%;
+                            }
+                        }
+                    }
+
+                    .url {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 50px;
+
+                        a {
+                            background-color: @primary-bg-dark;
+                            display: flex;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100px;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 30px;
+
+                            img {
+                                height: 23px;
+                                width: 23px;
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    // + HOME PAGE MAİN SEC ====================================
 
     #MainSec {
 
@@ -558,6 +1172,87 @@
                 user-select: none;
 
             }
+        }
+    }
+
+
+    // + FOOTER 
+
+    footer {
+        background-color: @primary-bg-dark;
+        display: flex;
+        padding: 10px 0px;
+        width: 100%;
+        margin-top: 0px;
+
+        main {
+            flex-direction: column;
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+
+                .copyright {
+                    span {
+                        height: 30px;
+                        width: 30px;
+                        cursor: pointer;
+                        display: flex;
+                        text-align: left;
+                        background-color: @primary-bg-dark;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 50px;
+                        border: 2px solid @primary-color;
+                    }
+
+                    p {
+                        display: flex;
+                        color: @secondary-color;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+                }
+
+                .mg-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+
+                .owner {
+                    display: flex;
+                    height: 30px;
+                    width: 30px;
+                    cursor: pointer;
+                    background-color: @primary-bg-dark;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    border: 2px solid @primary-color;
+
+                    img {
+                        height: 15px;
+                        display: flex;
+                        color: @secondary-color;
+                        margin: 0px;
+                        padding: 0px;
+                        user-select: none;
+                    }
+
+
+                }
+
+            }
+
         }
     }
 
