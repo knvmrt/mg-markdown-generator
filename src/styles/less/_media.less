@@ -1,6 +1,133 @@
-@media (max-width: 1024px){}
+@media (max-width: 1024px){
 
-@media (max-width: 992px){}
+            // HEADER
+
+            header {
+                background-color: @primary-bg-dark;
+        
+                main {
+                    justify-content: space-between;
+                    padding: 20px 50px;
+        
+                    .logo {
+                        align-items: center;
+        
+                        a {
+                            img {
+                                height: 40px;
+                            }
+                        }
+                    }
+        
+                    nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+        
+                        .navigations {
+                            ul {
+                                display: flex;
+                                list-style: none;
+                                margin: 0px;
+                                padding: 0px;
+        
+                                li {
+                                    font-size: 16px;
+                                    margin: 15px 0px 10px 40px;
+        
+                                    a {
+                                        font-weight: bold;
+                                        text-decoration: none;
+                                        color: @primary-color;
+                                        border-radius: 8px;
+                                        user-select: none;
+                                    }
+                                }
+                            }
+                        }
+        
+                    }
+        
+                    #menu-toggle {
+                        display: flex;
+                        align-items: center;
+                    }
+        
+                    
+                }
+            }
+        
+            // HEADER
+
+
+
+
+}
+
+@media (max-width: 992px){
+
+        // HEADER
+
+        header {
+            background-color: @primary-bg-dark;
+    
+            main {
+                justify-content: space-between;
+                padding: 20px 50px;
+    
+                .logo {
+                    align-items: center;
+    
+                    a {
+                        img {
+                            height: 40px;
+                        }
+                    }
+                }
+    
+                nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+    
+                    .navigations {
+                        ul {
+                            display: flex;
+                            list-style: none;
+                            margin: 0px;
+                            padding: 0px;
+    
+                            li {
+                                font-size: 16px;
+                                margin: 15px 0px 10px 40px;
+    
+                                a {
+                                    font-weight: bold;
+                                    text-decoration: none;
+                                    color: @primary-color;
+                                    border-radius: 8px;
+                                    user-select: none;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                #menu-toggle {
+                    display: flex;
+                    align-items: center;
+                }
+    
+                
+            }
+        }
+    
+        // HEADER
+
+
+
+}
 
 @media (max-width: 767px) {
 
@@ -68,7 +195,7 @@
                 height: 15%;
                 width: 100%;
                 right: 0px;
-                top: 80px;
+                top: 70px;
 
                 .navigations {
                     display: flex;
@@ -86,6 +213,7 @@
 
                         li {
                             flex-direction: column;
+                            margin: 15px 0px;
 
                             a {
                                 color: @primary-color;
@@ -244,6 +372,7 @@
                 justify-content: end;
 
                 .navigations {
+
                     ul {
                         display: flex;
                         list-style: none;
@@ -283,7 +412,7 @@
                 height: 15%;
                 width: 100%;
                 right: 0px;
-                top: 80px;
+                top: 70px;
 
                 .navigations {
                     display: flex;
@@ -298,9 +427,9 @@
                         text-align: center;
                         list-style-type: none;
 
-
                         li {
                             flex-direction: column;
+                            margin: 15px 0px;
 
                             a {
                                 color: @primary-color;

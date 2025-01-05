@@ -5,6 +5,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: @primary-bg-color;
 }
+
 .my-container {
   width: 90%;
   padding-right: 1.15rem, 0.90rem;
@@ -13,73 +14,232 @@ body {
   margin-left: auto;
 }
 
-// header {
-//   background-color: @primary-bg-dark;
-//   main {
-//     justify-content: space-between;
-//     padding: 20px 50px;
-    
-//     .logo {
-//       a{
-//         img{
-//           height: 40px;
-//         }
-//       }
-//     }
-    
-//     nav {
-//       display: flex;
-//       align-items: center;
-//       justify-content: end;
-//       .navigations{
-//         ul {
-//           display: flex;
-//           list-style: none;
-//           margin: 0px;
-//           padding: 0px;
-          
-//           li {
-//             font-size: 16px;
-//             margin-left: 60px;
-  
-//             a {
-//               font-weight: bold;
-//               text-decoration: none;
-//               color: @primary-color;
-//               border-radius: 8px;
-//               user-select: none;
-//             }
-//           }
-//         }
-//       }
+// HEADER
 
-//     }
+header {
+  background-color: @primary-bg-dark;
 
-//     #menu-toggle{
-//       display: flex;
-//       align-items: center;
-//     }
+  main {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
 
-//     // .mobil-nav-open{
-//     //   position: absolute;
-//     //   top: 100px;
-//     //   height: 50px;
+    .logo {
+      align-items: center;
 
-//     // }
+      a {
+        img {
+          height: 40px;
+        }
+      }
+    }
 
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: end;
 
+      .navigations {
+        ul {
+          display: flex;
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+
+          li {
+            font-size: 16px;
+            margin: 15px 0px 10px 40px;
+
+            a {
+              font-weight: bold;
+              text-decoration: none;
+              color: @primary-color;
+              border-radius: 8px;
+              user-select: none;
+            }
+          }
+        }
+      }
+
+    }
+
+    #menu-toggle {
+      display: flex;
+      align-items: center;
+    }
 
 
-//   }
-// }
+  }
+}
+
+// HEADER
+
+// + HOME PAGE MAIN SECTION ===================================
+
+#HomeMainSec {
+  main {
+    padding-top: 130px;
+
+    .side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .left-side {
+        .blob {
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          img {
+            position: absolute;
+            height: 300px;
+            display: inline;
+          }
+
+
+        }
+      }
+
+      .right-side {
+        margin-left: 70px;
+
+        .main-text {
+          h1 {
+            font-size: 80px;
+            font-weight: bold;
+            color: @secondary-color;
+
+            span {
+              color: @primary-color;
+              font-weight: bolder;
+            }
+          }
+
+          .paragraph {
+
+            p {
+              padding-right: 180px;
+              color: @secondary-color;
+              font-size: 20px;
+              line-height: 159%;
+            }
+          }
+        }
+
+        .url {
+          display: flex;
+          align-items: center;
+
+          a {
+            background-color: @primary-bg-dark;
+            display: flex;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 30px 0px 0px;
+
+            img {
+              height: 30px;
+              width: 30px;
+
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+// + HOME PAGE MAIN SECTION ===================================
+
+
+footer {
+  display: flex;
+  background-color: @primary-bg-dark;
+  padding: 15px 0px;
+  // margin-bottom: 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+  main {
+    align-items: center;
+
+
+      .copyright {
+        span {
+          height: 40px;
+          width: 40px;
+          cursor: pointer;
+          display: flex;
+          font-size: 13px;
+          text-align: left;
+          background-color: @primary-bg-dark;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          border-radius: 50px;
+          border: 2px solid @primary-color;
+        }
+
+        p {
+          display: flex;
+          color: @secondary-color;
+          font-size: 30px;
+          font-weight: bold;
+          margin: 0px;
+          padding: 0px;
+          user-select: none;
+        }
+      }
+      .mg-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .owner {
+        display: flex;
+        justify-content: flex-end;
+        span {
+          height: 40px;
+          width: 40px;
+          cursor: pointer;
+          display: flex;
+          background-color: @primary-bg-dark;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          border: 2px solid @primary-color;
+
+          img {
+            height: 30px;
+            display: flex;
+            color: @secondary-color;
+            margin: 0px;
+            padding: 0px;
+            user-select: none;
+          }
+        }
+      
+    }
+  }
+}
 
 
 #MainSec {
 
   .side {
     font-size: 20px;
-    #mobile-buttons{
-      .markdown-button{
+
+    #mobile-buttons {
+      .markdown-button {
         font-size: 20px;
         background-color: @primary-color;
         color: @primary-bg-dark;
@@ -88,7 +248,8 @@ body {
         border-radius: 10px;
         font-weight: bold;
       }
-      .preview-button{
+
+      .preview-button {
         font-size: 20px;
         background-color: @secondary-color;
         color: @primary-bg-dark;
@@ -105,7 +266,7 @@ body {
     }
 
     #markdown-section {
-  
+
       #markdown-input {
         border: 5px solid @primary-color;
         border-radius: 10px 0px 0px 10px;
@@ -143,12 +304,12 @@ body {
     }
   }
 
-  .text-end{
+  .text-end {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    #copyright{
+
+    #copyright {
       height: 40px;
       width: 40px;
       cursor: pointer;
@@ -162,7 +323,7 @@ body {
       border-radius: 50px;
       border: 2px solid @primary-color;
 
-      p{
+      p {
         display: flex;
         color: @secondary-color;
         font-size: 30px;
@@ -172,7 +333,8 @@ body {
         user-select: none;
       }
     }
-    .download-button{
+
+    .download-button {
       font-size: 20px;
       background-color: @primary-color;
       color: @primary-bg-dark;
@@ -185,4 +347,3 @@ body {
     }
   }
 }
-
