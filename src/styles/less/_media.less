@@ -1,7 +1,6 @@
 @media (max-width: 1024px) {
 
     // HEADER
-
     header {
         background-color: @primary-bg-dark;
 
@@ -151,8 +150,6 @@
 
 
     // + HOME PAGE MAİN SEC ====================================
-
-
     // + FOOTER 
 
     footer {
@@ -230,6 +227,64 @@
 
             }
 
+        }
+    }
+
+    // + ERROR PAGE ========================================
+    #ErrorPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        color: @primary-color;
+
+        main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            .img-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .blob-svg {
+                    height: 300px;
+
+                }
+
+                .blob-logo {
+                    height: 150px;
+                    position: absolute;
+                }
+
+            }
+        }
+
+        .text-box {
+            margin-top: 50px;
+
+            h1 {
+                font-size: 45px;
+                font-weight: bolder;
+
+            }
+
+            p {
+                font-size: 20px;
+
+            }
+
+            a {
+                font-size: 18px;
+                font-weight: bold;
+                color: @primary-bg-color;
+                background-color: @primary-color;
+                padding: 8px 18px;
+                border-radius: 8px;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -467,6 +522,65 @@
 
             }
 
+        }
+    }
+
+    // + ERROR PAGE ========================================
+
+    #ErrorPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        color: @primary-color;
+
+        main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            .img-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .blob-svg {
+                    height: 300px;
+
+                }
+
+                .blob-logo {
+                    height: 150px;
+                    position: absolute;
+                }
+
+            }
+        }
+
+        .text-box {
+            margin-top: 50px;
+
+            h1 {
+                font-size: 45px;
+                font-weight: bolder;
+
+            }
+
+            p {
+                font-size: 20px;
+
+            }
+
+            a {
+                font-size: 18px;
+                font-weight: bold;
+                color: @primary-bg-color;
+                background-color: @primary-color;
+                padding: 8px 18px;
+                border-radius: 8px;
+                text-decoration: none;
+            }
         }
     }
 
@@ -862,6 +976,65 @@
 
         }
     }
+
+    // + ERROR PAGE ========================================
+
+    #ErrorPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        color: @primary-color;
+
+        main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            .img-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .blob-svg {
+                    height: 300px;
+
+                }
+
+                .blob-logo {
+                    height: 150px;
+                    position: absolute;
+                }
+
+            }
+        }
+
+        .text-box {
+            margin-top: 50px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: bolder;
+
+            }
+
+            p {
+                font-size: 18px;
+
+            }
+
+            a {
+                font-size: 18px;
+                font-weight: bold;
+                color: @primary-bg-color;
+                background-color: @primary-color;
+                padding: 8px 18px;
+                border-radius: 8px;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -1057,11 +1230,7 @@
         }
     }
 
-
-
-
-
-    // + HOME PAGE MAİN SEC ====================================
+    // + EDITOR PAGE MAİN SEC ====================================
 
     #MainSec {
 
@@ -1098,12 +1267,12 @@
                     border-radius: 10px;
                     background-color: @primary-bg-dark;
                     color: @secondary-color;
-                    height: 450px;
+                    min-height: 180px;
+                    max-height: 400px;
                     resize: none;
                     overflow-y: scroll;
                     padding: 10px;
                     font-size: 16px;
-                    line-height: 1.5;
                 }
 
             }
@@ -1175,6 +1344,46 @@
         }
     }
 
+    // + DASHBOARD PAGE 
+
+    #DashboardMainSec {
+        .mainArea {
+            .area {
+                .title {
+                    font-size: 20px;
+                }
+
+                .inputs {
+                    #fileName {
+                        width: 300px;
+                        height: 40px;
+                        border-radius: 8px;
+                        padding: 0px 20px;
+                    }
+                }
+
+                // #createFile {
+                //     font-size: 18px;
+                //     background-color: @primary-color;
+                //     color: @primary-bg-dark;
+                //     padding: 5px;
+                //     width: 300px;
+                //     border: none;
+                //     border-radius: 10px;
+                //     font-weight: bold;
+
+                //     margin-top: 30px;
+
+                //     &:hover {
+                //         transition: all 0.2s ease-in-out;
+                //         box-shadow: 0px 0px 30px #00daa086;
+                //     }
+                // }
+            }
+        }
+    }
+
+    // + DASHBOARD PAGE 
 
     // + FOOTER 
 
@@ -1253,6 +1462,65 @@
 
             }
 
+        }
+    }
+
+    // + ERROR PAGE ========================================
+
+    #ErrorPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        color: @primary-color;
+
+        main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            .img-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .blob-svg {
+                    height: 250px;
+
+                }
+
+                .blob-logo {
+                    height: 140px;
+                    position: absolute;
+                }
+
+            }
+        }
+
+        .text-box {
+            margin-top: 50px;
+
+            h1 {
+                font-size: 30px;
+                font-weight: bolder;
+
+            }
+
+            p {
+                font-size: 18px;
+
+            }
+
+            a {
+                font-size: 15px;
+                font-weight: bold;
+                color: @primary-bg-color;
+                background-color: @primary-color;
+                padding: 8px 18px;
+                border-radius: 8px;
+                text-decoration: none;
+            }
         }
     }
 

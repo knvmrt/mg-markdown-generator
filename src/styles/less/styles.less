@@ -1,5 +1,5 @@
 @import "_variables.less";
-@import "_media.less";
+
 
 body {
   font-family: Arial, sans-serif;
@@ -95,16 +95,16 @@ header {
           z-index: -1;
 
           .blob-svg {
-              width: 500px;
+            width: 500px;
           }
 
           .blob-logo {
-              position: absolute;
-              height: 300px;
+            position: absolute;
+            height: 300px;
           }
 
 
-      }
+        }
       }
 
       .right-side {
@@ -164,6 +164,79 @@ header {
 
 // + HOME PAGE MAIN SECTION ===================================
 
+// + DASHBOARD MAİN SECTİON ==================================
+
+
+#DashboardMainSec {
+  main {
+    .mainArea {
+      color: @secondary-color;
+      margin-top: 160px;
+      // padding: 60px;
+
+      .file-creation-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .area {
+          width: 500px;
+          // height: 300px;
+          display: flex;
+          justify-content: flex-start;
+          padding: 50px 0px;
+          flex-direction: column;
+          background-color: @primary-bg-dark;
+          border: solid 5px @primary-color;
+          border-radius: 10px;
+
+          .title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+          }
+
+          .inputs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            // #fileName {
+            //   // width: 400px;
+            //   height: 40px;
+            //   border-radius: 8px;
+            //   padding: 0px 20px;
+            // }
+
+            #createFile {
+              font-size: 18px;
+              background-color: @primary-color;
+              color: @primary-bg-dark;
+              padding: 5px;
+              width: 400px;
+              border: none;
+              border-radius: 10px;
+              font-weight: bold;
+              user-select: none;
+              margin-top: 30px;
+
+              &:hover {
+                transition: all 0.2s ease-in-out;
+                box-shadow: 0px 0px 30px #00daa086;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// + DASHBOARD MAİN SECTİON ==================================
+
 // + EDITOR PAGE ==============================================
 
 #MainSec {
@@ -205,12 +278,11 @@ header {
         border-radius: 10px 0px 0px 10px;
         background-color: @primary-bg-dark;
         color: @secondary-color;
-        height: 690px;
+        height: 350px;
         resize: none;
         overflow-y: scroll;
         padding: 10px;
         font-size: 16px;
-        line-height: 1.5;
       }
 
     }
@@ -276,10 +348,10 @@ header {
       border-radius: 10px;
       font-weight: bold;
       user-select: none;
-
     }
   }
 }
+
 // + EDITOR PAGE ==============================================
 
 // + FOOTER ===================================================
@@ -363,3 +435,63 @@ footer {
   }
 }
 
+// + ERROR PAGE ========================================
+
+#ErrorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: @primary-color;
+
+  main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .blob-svg {
+        height: 300px;
+
+      }
+
+      .blob-logo {
+        height: 160px;
+        position: absolute;
+      }
+
+    }
+  }
+
+  .text-box {
+    margin-top: 50px;
+
+    h1 {
+      font-size: 50px;
+      font-weight: bolder;
+
+    }
+
+    p {
+      font-size: 20px;
+
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: @primary-bg-color;
+      background-color: @primary-color;
+      padding: 8px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  }
+}
+
+@import "_media.less";
