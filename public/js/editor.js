@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (!fileCreated) {
     // Eğer izin yoksa doğrudan Error sayfasına yönlendir
-    window.location.href = "/public/error.html";
+    window.location.href = "../error.html";
   } else {
     // İzin varsa anahtarı temizle
     localStorage.removeItem("fileCreated");

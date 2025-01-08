@@ -25,5 +25,5 @@ document.getElementById('createFile').addEventListener('click', () => {
   
     // Redirect to editor page
     localStorage.setItem("fileCreated", "true"); // İzin verildiğini işaretle
-    window.location.href = "/public/editor.html";
+    window.location.href = "../editor.html";
   });
