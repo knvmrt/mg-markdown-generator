@@ -4,17 +4,12 @@
   "description": "My Project",
   "main": "index.js",
   "scripts": {
-
-  "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "w-less": "chokidar \"src/styles/less/**/*.less\" -c \"npm run build-less\""
   },
   "dependencies": {
     "less": "^4.2.0"
   },
   "devDependencies": {
-    "chokidar-cli": "^3.0.0",
-    "vite": "^6.0.7"
+    "chokidar-cli": "^3.0.0"
   }
 }
