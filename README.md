@@ -17,6 +17,9 @@
 
 **I’m not sure yet, but maybe one day I’ll implement it. Users will be able to import markdown files and make changes to them. This feature aims to provide a more efficient and practical experience.**
 
+<hr>
+<a href="https://kofe.al/@knvmrt"> <img src="https://i.imgur.com/2nSVp1k.png" alt="buymeacoffee" width="auto" height="30" title="Buy me a coffee"/> </a>
+
 ### Project structure:
 ```bash
 └── documentation-web
