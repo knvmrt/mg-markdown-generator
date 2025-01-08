@@ -80,6 +80,7 @@ header {
   main {
     padding-top: 130px;
 
+
     .side {
       display: flex;
       justify-content: center;
@@ -168,11 +169,16 @@ header {
 
 
 #DashboardMainSec {
+  margin-bottom: 28px;
+
   main {
+    display: flexbox;
+    height: 60vh;
+    bottom: 0px;
+
     .mainArea {
       color: @secondary-color;
-      margin-top: 160px;
-      // padding: 60px;
+      margin-top: 150px;
 
       .file-creation-area {
         display: flex;
@@ -180,11 +186,9 @@ header {
         align-items: center;
 
         .area {
-          width: 500px;
-          // height: 300px;
           display: flex;
           justify-content: flex-start;
-          padding: 50px 0px;
+          padding: 30px 40px;
           flex-direction: column;
           background-color: @primary-bg-dark;
           border: solid 5px @primary-color;
@@ -192,8 +196,9 @@ header {
 
           .title {
             display: flex;
+            font-weight: bold;
             justify-content: center;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
           }
 
           .inputs {
@@ -202,30 +207,26 @@ header {
             align-items: center;
             flex-direction: column;
 
-            // #fileName {
-            //   // width: 400px;
-            //   height: 40px;
-            //   border-radius: 8px;
-            //   padding: 0px 20px;
-            // }
+            #fileName {
+              border-radius: 8px;
+              padding: 8px 20px;
+            }
 
             #createFile {
               font-size: 18px;
               background-color: @primary-color;
               color: @primary-bg-dark;
-              padding: 5px;
-              width: 400px;
+              padding: 8px 60px;
               border: none;
               border-radius: 10px;
               font-weight: bold;
               user-select: none;
-              margin-top: 30px;
+              margin-top: 20px;
 
               &:hover {
                 transition: all 0.2s ease-in-out;
                 box-shadow: 0px 0px 30px #00daa086;
               }
-
             }
           }
         }
@@ -239,24 +240,24 @@ header {
 
 // + EDITOR PAGE ==============================================
 
-#MainSec {
+#EditorMainSec {
+  margin-bottom: 19px;
 
   .side {
-    font-size: 20px;
 
     #mobile-buttons {
       .markdown-button {
-        font-size: 20px;
+        font-size: 15px;
         background-color: @primary-color;
         color: @primary-bg-dark;
-        padding: 8px 20px;
+        padding: 8px 16px;
         border: none;
         border-radius: 10px;
         font-weight: bold;
       }
 
       .preview-button {
-        font-size: 20px;
+        font-size: 15px;
         background-color: @secondary-color;
         color: @primary-bg-dark;
         padding: 8px 20px;
@@ -267,6 +268,7 @@ header {
     }
 
     label {
+      font-size: 20px;
       color: @secondary-color;
       margin-left: 20px;
     }
@@ -278,10 +280,10 @@ header {
         border-radius: 10px 0px 0px 10px;
         background-color: @primary-bg-dark;
         color: @secondary-color;
-        height: 350px;
+        height: 640px;
         resize: none;
         overflow-y: scroll;
-        padding: 10px;
+        padding: 8px;
         font-size: 16px;
       }
 
@@ -290,11 +292,6 @@ header {
   }
 
   #preview-section {
-    label {
-      color: @secondary-color;
-      margin-left: 20px;
-    }
-
     #preview {
       border: 5px solid @primary-color;
       border-radius: 10px 0px 0px 10px;
@@ -302,44 +299,17 @@ header {
       color: @secondary-color;
       overflow-y: scroll;
       padding: 10px;
-      height: 690px;
+      height: 640px;
       resize: none;
       font-size: 16px;
       line-height: 1.5;
     }
   }
 
-  .text-end {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .download-button {
+    text-align: end;
 
-    #copyright {
-      height: 40px;
-      width: 40px;
-      cursor: pointer;
-      display: flex;
-      font-size: 13px;
-      text-align: left;
-      background-color: @primary-bg-dark;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border-radius: 50px;
-      border: 2px solid @primary-color;
-
-      p {
-        display: flex;
-        color: @secondary-color;
-        font-size: 30px;
-        font-weight: bold;
-        margin: 0px;
-        padding: 0px;
-        user-select: none;
-      }
-    }
-
-    .download-button {
+    .download-btn {
       font-size: 20px;
       background-color: @primary-color;
       color: @primary-bg-dark;
@@ -357,11 +327,11 @@ header {
 // + FOOTER ===================================================
 
 footer {
-  display: flex;
+  display: block;
+  position: fixed;
   background-color: @primary-bg-dark;
   padding: 15px 0px;
   width: 100%;
-  position: fixed;
   bottom: 0;
 
   main {

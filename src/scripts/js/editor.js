@@ -61,17 +61,16 @@ window.addEventListener('beforeunload', () => {
 });
 
 
+// Dashboard control
 
+window.addEventListener("DOMContentLoaded", () => {
+  const fileCreated = localStorage.getItem("fileCreated");
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   const fileCreated = localStorage.getItem("fileCreated");
-
-//   if (!fileCreated) {
-//     // Eğer izin yoksa doğrudan Error sayfasına yönlendir
-//     window.location.href = "../pages/error.html";
-//   } else {
-//     // İzin varsa anahtarı temizle
-//     localStorage.removeItem("fileCreated");
-//   }
-// });
-
+  if (!fileCreated) {
+    // Eğer izin yoksa doğrudan Error sayfasına yönlendir
+    window.location.href = "../pages/error.html";
+  } else {
+    // İzin varsa anahtarı temizle
+    localStorage.removeItem("fileCreated");
+  }
+});

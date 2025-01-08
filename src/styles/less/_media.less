@@ -150,6 +150,75 @@
 
 
     // + HOME PAGE MAİN SEC ====================================
+
+    // + DASHBOARD PAGE
+
+    #DashboardMainSec {
+        main {
+            .mainArea {
+                color: @secondary-color;
+                margin-top: 150px;
+
+                .file-creation-area {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .area {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 30px 40px;
+                        flex-direction: column;
+                        background-color: @primary-bg-dark;
+                        border: solid 5px @primary-color;
+                        border-radius: 10px;
+
+                        .title {
+                            display: flex;
+                            font-weight: bold;
+                            justify-content: center;
+                            margin-bottom: 30px;
+                        }
+
+                        .inputs {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+
+                            #fileName {
+                                border-radius: 8px;
+                                // padding: 8px;
+                                width: 100%;
+                            }
+
+                            #createFile {
+                                font-size: 15px;
+                                background-color: @primary-color;
+                                color: @primary-bg-dark;
+                                padding: 8px 0px;
+                                width: 100%;
+                                border: none;
+                                border-radius: 10px;
+                                font-weight: bold;
+                                user-select: none;
+                                margin-top: 20px;
+
+                                &:hover {
+                                    transition: all 0.2s ease-in-out;
+                                    box-shadow: 0px 0px 30px #00daa086;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // + DASHBOARD PAGE
+
     // + FOOTER 
 
     footer {
@@ -444,6 +513,73 @@
 
     // + HOME PAGE MAİN SEC ====================================
 
+    // + DASHBOARD PAGE
+
+    #DashboardMainSec {
+        main {
+            .mainArea {
+                color: @secondary-color;
+                margin-top: 150px;
+
+                .file-creation-area {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .area {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 30px 40px;
+                        flex-direction: column;
+                        background-color: @primary-bg-dark;
+                        border: solid 5px @primary-color;
+                        border-radius: 10px;
+
+                        .title {
+                            display: flex;
+                            font-weight: bold;
+                            justify-content: center;
+                            margin-bottom: 30px;
+                        }
+
+                        .inputs {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+
+                            #fileName {
+                                border-radius: 8px;
+                                // padding: 8px;
+                                width: 100%;
+                            }
+
+                            #createFile {
+                                font-size: 15px;
+                                background-color: @primary-color;
+                                color: @primary-bg-dark;
+                                padding: 8px 0px;
+                                width: 100%;
+                                border: none;
+                                border-radius: 10px;
+                                font-weight: bold;
+                                user-select: none;
+                                margin-top: 20px;
+
+                                &:hover {
+                                    transition: all 0.2s ease-in-out;
+                                    box-shadow: 0px 0px 30px #00daa086;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // + DASHBOARD PAGE
 
     // + FOOTER 
 
@@ -786,7 +922,7 @@
 
 
 
-    #MainSec {
+    #EditorMainSec {
 
         .side {
             font-size: 20px;
@@ -852,38 +988,12 @@
             }
         }
 
-        .text-end {
+        .download-button {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            #copyright {
-                height: 40px;
-                width: 40px;
-                cursor: pointer;
-                display: flex;
-                font-size: 13px;
-                text-align: left;
-                background-color: @primary-bg-dark;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                border-radius: 50px;
-                border: 2px solid @primary-color;
-
-                p {
-                    display: flex;
-                    color: @secondary-color;
-                    font-size: 30px;
-                    font-weight: bold;
-                    margin: 0px;
-                    padding: 0px;
-                    user-select: none;
-
-                }
-            }
-
-            .download-button {
+            .download-btn {
                 font-size: 20px;
                 background-color: @primary-color;
                 color: @primary-bg-dark;
@@ -896,6 +1006,74 @@
             }
         }
     }
+
+    // + DASHBOARD PAGE
+
+    #DashboardMainSec {
+        main {
+            .mainArea {
+                color: @secondary-color;
+                margin-top: 150px;
+
+                .file-creation-area {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .area {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 30px 40px;
+                        flex-direction: column;
+                        background-color: @primary-bg-dark;
+                        border: solid 5px @primary-color;
+                        border-radius: 10px;
+
+                        .title {
+                            display: flex;
+                            font-weight: bold;
+                            justify-content: center;
+                            margin-bottom: 30px;
+                        }
+
+                        .inputs {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+
+                            #fileName {
+                                border-radius: 8px;
+                                // padding: 8px;
+                                width: 100%;
+                            }
+
+                            #createFile {
+                                font-size: 15px;
+                                background-color: @primary-color;
+                                color: @primary-bg-dark;
+                                padding: 8px 0px;
+                                width: 100%;
+                                border: none;
+                                border-radius: 10px;
+                                font-weight: bold;
+                                user-select: none;
+                                margin-top: 20px;
+
+                                &:hover {
+                                    transition: all 0.2s ease-in-out;
+                                    box-shadow: 0px 0px 30px #00daa086;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // + DASHBOARD PAGE
 
     // + FOOTER 
 
@@ -1204,7 +1382,7 @@
                     .url {
                         display: flex;
                         align-items: center;
-                        margin-bottom: 50px;
+                        margin-bottom: 70px;
 
                         a {
                             background-color: @primary-bg-dark;
@@ -1232,30 +1410,35 @@
 
     // + EDITOR PAGE MAİN SEC ====================================
 
-    #MainSec {
+    #EditorMainSec {
+        margin-bottom: 35px;
 
         .side {
-            font-size: 20px;
 
             #mobile-buttons {
                 .markdown-button {
+                    font-size: 15px;
                     background-color: @primary-color;
                     color: @primary-bg-dark;
-                    padding: 8px 20px;
+                    padding: 8px 16px;
                     border: none;
                     border-radius: 10px;
+                    font-weight: bold;
                 }
 
                 .preview-button {
+                    font-size: 15px;
                     background-color: @secondary-color;
                     color: @primary-bg-dark;
                     padding: 8px 20px;
                     border: none;
                     border-radius: 10px;
+                    font-weight: bold;
                 }
             }
 
             label {
+                font-size: 20px;
                 color: @secondary-color;
                 margin-left: 20px;
             }
@@ -1264,14 +1447,13 @@
 
                 #markdown-input {
                     border: 5px solid @primary-color;
-                    border-radius: 10px;
+                    border-radius: 10px 0px 0px 10px;
                     background-color: @primary-bg-dark;
                     color: @secondary-color;
-                    min-height: 180px;
-                    max-height: 400px;
+                    height: 400px;
                     resize: none;
                     overflow-y: scroll;
-                    padding: 10px;
+                    padding: 8px;
                     font-size: 16px;
                 }
 
@@ -1280,57 +1462,24 @@
         }
 
         #preview-section {
-            label {
-                color: @secondary-color;
-                margin-left: 20px;
-            }
-
             #preview {
                 border: 5px solid @primary-color;
-                border-radius: 10px;
+                border-radius: 10px 0px 0px 10px;
                 background-color: @primary-bg-dark;
                 color: @secondary-color;
                 overflow-y: scroll;
                 padding: 10px;
-                height: 450px;
+                height: 400px;
                 resize: none;
                 font-size: 16px;
                 line-height: 1.5;
             }
         }
 
-        .text-end {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .download-button {
+            text-align: end;
 
-            #copyright {
-                height: 40px;
-                width: 40px;
-                cursor: pointer;
-                display: flex;
-                font-size: 13px;
-                text-align: left;
-                background-color: @primary-bg-dark;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                border-radius: 50px;
-                border: 2px solid @primary-color;
-
-                p {
-                    display: flex;
-                    color: @secondary-color;
-                    font-size: 30px;
-                    font-weight: bold;
-                    margin: 0px;
-                    padding: 0px;
-                    user-select: none;
-
-                }
-            }
-
-            .download-button {
+            .download-btn {
                 font-size: 20px;
                 background-color: @primary-color;
                 color: @primary-bg-dark;
@@ -1339,7 +1488,6 @@
                 border-radius: 10px;
                 font-weight: bold;
                 user-select: none;
-
             }
         }
     }
@@ -1347,38 +1495,67 @@
     // + DASHBOARD PAGE 
 
     #DashboardMainSec {
-        .mainArea {
-            .area {
-                .title {
-                    font-size: 20px;
-                }
+        margin-bottom: 28px;
+        height: 55vh;
+        bottom: 0px;
 
-                .inputs {
-                    #fileName {
-                        width: 300px;
-                        height: 40px;
-                        border-radius: 8px;
-                        padding: 0px 20px;
+        main {
+            // display: flexbox;
+
+            .mainArea {
+
+                .file-creation-area {
+                    color: @secondary-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .area {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 30px 40px;
+                        flex-direction: column;
+                        background-color: @primary-bg-dark;
+                        border: solid 5px @primary-color;
+                        border-radius: 10px;
+
+                        .title {
+                            display: flex;
+                            font-weight: bold;
+                            justify-content: center;
+                            margin-bottom: 30px;
+                        }
+
+                        .inputs {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+
+                            #fileName {
+                                border-radius: 8px;
+                                padding: 8px 20px;
+                            }
+
+                            #createFile {
+                                font-size: 18px;
+                                background-color: @primary-color;
+                                color: @primary-bg-dark;
+                                padding: 8px 60px;
+                                border: none;
+                                border-radius: 10px;
+                                font-weight: bold;
+                                user-select: none;
+                                margin-top: 20px;
+
+                                &:hover {
+                                    transition: all 0.2s ease-in-out;
+                                    box-shadow: 0px 0px 30px #00daa086;
+                                }
+                            }
+                        }
                     }
                 }
-
-                // #createFile {
-                //     font-size: 18px;
-                //     background-color: @primary-color;
-                //     color: @primary-bg-dark;
-                //     padding: 5px;
-                //     width: 300px;
-                //     border: none;
-                //     border-radius: 10px;
-                //     font-weight: bold;
-
-                //     margin-top: 30px;
-
-                //     &:hover {
-                //         transition: all 0.2s ease-in-out;
-                //         box-shadow: 0px 0px 30px #00daa086;
-                //     }
-                // }
             }
         }
     }
@@ -1464,6 +1641,7 @@
 
         }
     }
+
 
     // + ERROR PAGE ========================================
 

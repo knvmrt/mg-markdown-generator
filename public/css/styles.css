@@ -4,8 +4,8 @@ body {
 }
 .my-container {
   width: 90%;
-  padding-right: 1.15rem, 0.8rem;
-  padding-left: 1.15rem, 0.8rem;
+  padding-right: 1.15rem, 0.9rem;
+  padding-left: 1.15rem, 0.9rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -14,46 +14,171 @@ header {
 }
 header main {
   justify-content: space-between;
-  padding: 20px 50px;
+  align-items: center;
+  padding: 15px 0px;
 }
-header main .logo a img {
-  height: 50px;
-}
-header main .navigation {
-  display: flex;
+header main .logo {
   align-items: center;
 }
-header main .navigation ul {
+header main .logo a img {
+  height: 40px;
+}
+header main nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header main nav .navigations ul {
+  display: flex;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-header main .navigation ul li {
+header main nav .navigations ul li {
   font-size: 16px;
+  margin: 15px 0px 10px 40px;
 }
-header main .navigation ul li a {
+header main nav .navigations ul li a {
   font-weight: bold;
   text-decoration: none;
-  color: #191E29;
-  background-color: #01C38E;
-  padding: 8px 16px;
+  color: #01C38E;
   border-radius: 8px;
   user-select: none;
 }
-#MainSec .side {
-  font-size: 20px;
+header main #menu-toggle {
+  display: flex;
+  align-items: center;
 }
-#MainSec .side #mobile-buttons .markdown-button {
+#HomeMainSec main {
+  padding-top: 130px;
+}
+#HomeMainSec main .side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#HomeMainSec main .side .left-side .blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+#HomeMainSec main .side .left-side .blob .blob-svg {
+  width: 500px;
+}
+#HomeMainSec main .side .left-side .blob .blob-logo {
+  position: absolute;
+  height: 300px;
+}
+#HomeMainSec main .side .right-side {
+  margin-left: 70px;
+}
+#HomeMainSec main .side .right-side .main-text h1 {
+  font-size: 83px;
+  font-weight: bold;
+  color: #e7e8e9;
+}
+#HomeMainSec main .side .right-side .main-text h1 span {
+  color: #01C38E;
+  font-weight: bolder;
+}
+#HomeMainSec main .side .right-side .main-text .paragraph p {
+  padding-right: 180px;
+  color: #e7e8e9;
   font-size: 20px;
+  line-height: 160%;
+}
+#HomeMainSec main .side .right-side .url {
+  display: flex;
+  align-items: center;
+}
+#HomeMainSec main .side .right-side .url a {
+  background-color: #191E29;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 30px 0px 0px;
+}
+#HomeMainSec main .side .right-side .url a img {
+  height: 30px;
+  width: 30px;
+}
+#DashboardMainSec {
+  margin-bottom: 28px;
+}
+#DashboardMainSec main {
+  display: flexbox;
+  height: 60vh;
+  bottom: 0px;
+}
+#DashboardMainSec main .mainArea {
+  color: #e7e8e9;
+  margin-top: 150px;
+}
+#DashboardMainSec main .mainArea .file-creation-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#DashboardMainSec main .mainArea .file-creation-area .area {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 40px;
+  flex-direction: column;
+  background-color: #191E29;
+  border: solid 5px #01C38E;
+  border-radius: 10px;
+}
+#DashboardMainSec main .mainArea .file-creation-area .area .title {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#DashboardMainSec main .mainArea .file-creation-area .area .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#DashboardMainSec main .mainArea .file-creation-area .area .inputs #fileName {
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+#DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile {
+  font-size: 18px;
   background-color: #01C38E;
   color: #191E29;
-  padding: 8px 20px;
+  padding: 8px 60px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  user-select: none;
+  margin-top: 20px;
+}
+#DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 30px #00daa086;
+}
+#EditorMainSec {
+  margin-bottom: 19px;
+}
+#EditorMainSec .side #mobile-buttons .markdown-button {
+  font-size: 15px;
+  background-color: #01C38E;
+  color: #191E29;
+  padding: 8px 16px;
   border: none;
   border-radius: 10px;
   font-weight: bold;
 }
-#MainSec .side #mobile-buttons .preview-button {
-  font-size: 20px;
+#EditorMainSec .side #mobile-buttons .preview-button {
+  font-size: 15px;
   background-color: #e7e8e9;
   color: #191E29;
   padding: 8px 20px;
@@ -61,44 +186,64 @@ header main .navigation ul li a {
   border-radius: 10px;
   font-weight: bold;
 }
-#MainSec .side label {
+#EditorMainSec .side label {
+  font-size: 20px;
   color: #e7e8e9;
   margin-left: 20px;
 }
-#MainSec .side #markdown-section #markdown-input {
+#EditorMainSec .side #markdown-section #markdown-input {
   border: 5px solid #01C38E;
   border-radius: 10px 0px 0px 10px;
   background-color: #191E29;
   color: #e7e8e9;
-  height: 690px;
+  height: 640px;
   resize: none;
   overflow-y: scroll;
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
-  line-height: 1.5;
 }
-#MainSec #preview-section label {
-  color: #e7e8e9;
-  margin-left: 20px;
-}
-#MainSec #preview-section #preview {
+#EditorMainSec #preview-section #preview {
   border: 5px solid #01C38E;
   border-radius: 10px 0px 0px 10px;
   background-color: #191E29;
   color: #e7e8e9;
   overflow-y: scroll;
   padding: 10px;
-  height: 690px;
+  height: 640px;
   resize: none;
   font-size: 16px;
   line-height: 1.5;
 }
-#MainSec .text-end {
+#EditorMainSec .download-button {
+  text-align: end;
+}
+#EditorMainSec .download-button .download-btn {
+  font-size: 20px;
+  background-color: #01C38E;
+  color: #191E29;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  user-select: none;
+}
+footer {
+  display: block;
+  position: fixed;
+  background-color: #191E29;
+  padding: 15px 0px;
+  width: 100%;
+  bottom: 0;
+}
+footer main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-#MainSec .text-end #copyright {
+footer main .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer main .footer-content .copyright span {
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -112,7 +257,7 @@ header main .navigation ul li a {
   border-radius: 50px;
   border: 2px solid #01C38E;
 }
-#MainSec .text-end #copyright p {
+footer main .footer-content .copyright p {
   display: flex;
   color: #e7e8e9;
   font-size: 30px;
@@ -121,104 +266,248 @@ header main .navigation ul li a {
   padding: 0px;
   user-select: none;
 }
-#MainSec .text-end .download-button {
-  font-size: 20px;
-  background-color: #01C38E;
-  color: #191E29;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
+footer main .footer-content .mg-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer main .footer-content .mg-logo img {
+  height: 40px;
+}
+footer main .footer-content .owner {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: #191E29;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #01C38E;
+}
+footer main .footer-content .owner img {
+  height: 20px;
+  display: flex;
+  color: #e7e8e9;
+  margin: 0px;
+  padding: 0px;
   user-select: none;
 }
-@media (max-width: 767px) {
+#ErrorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: #01C38E;
+}
+#ErrorPage main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#ErrorPage main .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ErrorPage main .img-box .blob-svg {
+  height: 300px;
+}
+#ErrorPage main .img-box .blob-logo {
+  height: 160px;
+  position: absolute;
+}
+#ErrorPage .text-box {
+  margin-top: 50px;
+}
+#ErrorPage .text-box h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+#ErrorPage .text-box p {
+  font-size: 20px;
+}
+#ErrorPage .text-box a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #142C46;
+  background-color: #01C38E;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  header {
+    background-color: #191E29;
+  }
   header main {
     justify-content: space-between;
     padding: 20px 50px;
   }
-  header main .logo img {
-    height: 50px;
-  }
-  header main .navigation {
-    display: flex;
+  header main .logo {
     align-items: center;
   }
-  header main .navigation ul {
+  header main .logo a img {
+    height: 40px;
+  }
+  header main nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  header main nav .navigations ul {
+    display: flex;
     list-style: none;
     margin: 0px;
     padding: 0px;
   }
-  header main .navigation ul li {
-    font-size: 15px;
+  header main nav .navigations ul li {
+    font-size: 16px;
+    margin: 15px 0px 10px 40px;
   }
-  header main .navigation ul li a {
+  header main nav .navigations ul li a {
     font-weight: bold;
     text-decoration: none;
-    color: #191E29;
-    background-color: #01C38E;
-    padding: 4px 8px;
-    border-radius: 5px;
+    color: #01C38E;
+    border-radius: 8px;
+    user-select: none;
   }
-  #MainSec .side {
-    font-size: 20px;
-  }
-  #MainSec .side #mobile-buttons .markdown-button {
-    background-color: #01C38E;
-    color: #191E29;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 10px;
-  }
-  #MainSec .side #mobile-buttons .preview-button {
-    background-color: #e7e8e9;
-    color: #191E29;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 10px;
-  }
-  #MainSec .side label {
-    color: #e7e8e9;
-    margin-left: 20px;
-  }
-  #MainSec .side #markdown-section #markdown-input {
-    border: 5px solid #01C38E;
-    border-radius: 10px;
-    background-color: #191E29;
-    color: #e7e8e9;
-    height: 500px;
-    resize: none;
-    overflow-y: scroll;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  #MainSec #preview-section label {
-    color: #e7e8e9;
-    margin-left: 20px;
-  }
-  #MainSec #preview-section #preview {
-    border: 5px solid #01C38E;
-    border-radius: 10px;
-    background-color: #191E29;
-    color: #e7e8e9;
-    overflow-y: scroll;
-    padding: 10px;
-    height: 500px;
-    resize: none;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  #MainSec .text-end {
+  header main #menu-toggle {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-  #MainSec .text-end #copyright {
+  #HomeMainSec main {
+    padding-top: 90px;
+  }
+  #HomeMainSec main .side {
+    display: flex;
+    align-items: center;
+  }
+  #HomeMainSec main .side .left-side {
+    display: flex;
+  }
+  #HomeMainSec main .side .left-side .blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -1;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-svg {
+    width: 350px;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-logo {
+    position: absolute;
+    height: 180px;
+  }
+  #HomeMainSec main .side .right-side {
+    margin-left: 50px;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #e7e8e9;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 span {
+    color: #01C38E;
+    font-weight: bolder;
+  }
+  #HomeMainSec main .side .right-side .main-text .paragraph p {
+    padding-right: 35px;
+    color: #e7e8e9;
+    font-size: 18px;
+    line-height: 155%;
+  }
+  #HomeMainSec main .side .right-side .url {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #HomeMainSec main .side .right-side .url a {
+    background-color: #191E29;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  #HomeMainSec main .side .right-side .url a img {
+    height: 25px;
+    width: 25px;
+  }
+  #DashboardMainSec main .mainArea {
+    color: #e7e8e9;
+    margin-top: 150px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 40px;
+    flex-direction: column;
+    background-color: #191E29;
+    border: solid 5px #01C38E;
+    border-radius: 10px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .title {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #fileName {
+    border-radius: 8px;
+    width: 100%;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile {
+    font-size: 15px;
+    background-color: #01C38E;
+    color: #191E29;
+    padding: 8px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    user-select: none;
+    margin-top: 20px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 30px #00daa086;
+  }
+  footer {
+    background-color: #191E29;
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  footer main {
+    flex-direction: column;
+  }
+  footer main .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer main .footer-content .copyright span {
     height: 40px;
     width: 40px;
     cursor: pointer;
     display: flex;
-    font-size: 13px;
     text-align: left;
     background-color: #191E29;
     justify-content: center;
@@ -227,7 +516,7 @@ header main .navigation ul li a {
     border-radius: 50px;
     border: 2px solid #01C38E;
   }
-  #MainSec .text-end #copyright p {
+  footer main .footer-content .copyright p {
     display: flex;
     color: #e7e8e9;
     font-size: 30px;
@@ -236,7 +525,534 @@ header main .navigation ul li a {
     padding: 0px;
     user-select: none;
   }
-  #MainSec .text-end .download-button {
+  footer main .footer-content .mg-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer main .footer-content .mg-logo img {
+    height: 40px;
+  }
+  footer main .footer-content .owner {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .owner img {
+    height: 20px;
+    display: flex;
+    color: #e7e8e9;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  #ErrorPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #01C38E;
+  }
+  #ErrorPage main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  #ErrorPage main .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #ErrorPage main .img-box .blob-svg {
+    height: 300px;
+  }
+  #ErrorPage main .img-box .blob-logo {
+    height: 150px;
+    position: absolute;
+  }
+  #ErrorPage .text-box {
+    margin-top: 50px;
+  }
+  #ErrorPage .text-box h1 {
+    font-size: 45px;
+    font-weight: bolder;
+  }
+  #ErrorPage .text-box p {
+    font-size: 20px;
+  }
+  #ErrorPage .text-box a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #142C46;
+    background-color: #01C38E;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    background-color: #191E29;
+  }
+  header main {
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  header main .logo {
+    align-items: center;
+  }
+  header main .logo a img {
+    height: 40px;
+  }
+  header main nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  header main nav .navigations ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  header main nav .navigations ul li {
+    font-size: 16px;
+    margin: 15px 0px 10px 40px;
+  }
+  header main nav .navigations ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #01C38E;
+    border-radius: 8px;
+    user-select: none;
+  }
+  header main #menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+  #HomeMainSec main {
+    padding-top: 30px;
+  }
+  #HomeMainSec main .side {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #HomeMainSec main .side .left-side {
+    display: flex;
+  }
+  #HomeMainSec main .side .left-side .blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -1;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-svg {
+    width: 300px;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-logo {
+    position: absolute;
+    height: 160px;
+  }
+  #HomeMainSec main .side .right-side {
+    margin-left: 60px;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #e7e8e9;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 span {
+    color: #01C38E;
+    font-weight: bolder;
+  }
+  #HomeMainSec main .side .right-side .main-text .paragraph p {
+    padding-right: 35px;
+    color: #e7e8e9;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  #HomeMainSec main .side .right-side .url {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #HomeMainSec main .side .right-side .url a {
+    background-color: #191E29;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  #HomeMainSec main .side .right-side .url a img {
+    height: 25px;
+    width: 25px;
+  }
+  #DashboardMainSec main .mainArea {
+    color: #e7e8e9;
+    margin-top: 150px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 40px;
+    flex-direction: column;
+    background-color: #191E29;
+    border: solid 5px #01C38E;
+    border-radius: 10px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .title {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #fileName {
+    border-radius: 8px;
+    width: 100%;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile {
+    font-size: 15px;
+    background-color: #01C38E;
+    color: #191E29;
+    padding: 8px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    user-select: none;
+    margin-top: 20px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 30px #00daa086;
+  }
+  footer {
+    background-color: #191E29;
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  footer main {
+    flex-direction: column;
+  }
+  footer main .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer main .footer-content .copyright span {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .copyright p {
+    display: flex;
+    color: #e7e8e9;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  footer main .footer-content .mg-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer main .footer-content .mg-logo img {
+    height: 40px;
+  }
+  footer main .footer-content .owner {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .owner img {
+    height: 20px;
+    display: flex;
+    color: #e7e8e9;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  #ErrorPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #01C38E;
+  }
+  #ErrorPage main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  #ErrorPage main .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #ErrorPage main .img-box .blob-svg {
+    height: 300px;
+  }
+  #ErrorPage main .img-box .blob-logo {
+    height: 150px;
+    position: absolute;
+  }
+  #ErrorPage .text-box {
+    margin-top: 50px;
+  }
+  #ErrorPage .text-box h1 {
+    font-size: 45px;
+    font-weight: bolder;
+  }
+  #ErrorPage .text-box p {
+    font-size: 20px;
+  }
+  #ErrorPage .text-box a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #142C46;
+    background-color: #01C38E;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    background-color: #191E29;
+  }
+  header main {
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  header main .logo {
+    align-items: center;
+  }
+  header main .logo a img {
+    height: 40px;
+  }
+  header main nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  header main nav .navigations ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  header main nav .navigations ul li {
+    font-size: 16px;
+    margin: 15px 0px 10px 40px;
+  }
+  header main nav .navigations ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #01C38E;
+    border-radius: 8px;
+    user-select: none;
+  }
+  header main #menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+  header main .mobil-nav-open {
+    background-color: #191E29;
+    border-top: 3px solid #01C38E;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 5px 10px 5px #00000088;
+    height: 15%;
+    width: 100%;
+    right: 0px;
+    top: 70px;
+  }
+  header main .mobil-nav-open .navigations {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  header main .mobil-nav-open .navigations ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+  }
+  header main .mobil-nav-open .navigations ul li {
+    flex-direction: column;
+    margin: 15px 0px;
+  }
+  header main .mobil-nav-open .navigations ul li a {
+    color: #01C38E;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #HomeMainSec main {
+    padding-top: 30px;
+  }
+  #HomeMainSec main .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+  }
+  #HomeMainSec main .side .left-side {
+    display: flex;
+  }
+  #HomeMainSec main .side .left-side .blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -1;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-svg {
+    width: 250px;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-logo {
+    position: absolute;
+    height: 130px;
+  }
+  #HomeMainSec main .side .right-side {
+    margin-left: 10px;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #e7e8e9;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 span {
+    color: #01C38E;
+    font-weight: bolder;
+  }
+  #HomeMainSec main .side .right-side .main-text .paragraph p {
+    padding-right: 35px;
+    color: #e7e8e9;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  #HomeMainSec main .side .right-side .url {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #HomeMainSec main .side .right-side .url a {
+    background-color: #191E29;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  #HomeMainSec main .side .right-side .url a img {
+    height: 25px;
+    width: 25px;
+  }
+  #EditorMainSec .side {
+    font-size: 20px;
+  }
+  #EditorMainSec .side #mobile-buttons .markdown-button {
+    background-color: #01C38E;
+    color: #191E29;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  #EditorMainSec .side #mobile-buttons .preview-button {
+    background-color: #e7e8e9;
+    color: #191E29;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  #EditorMainSec .side label {
+    color: #e7e8e9;
+    margin-left: 20px;
+  }
+  #EditorMainSec .side #markdown-section #markdown-input {
+    border: 5px solid #01C38E;
+    border-radius: 10px;
+    background-color: #191E29;
+    color: #e7e8e9;
+    height: 500px;
+    resize: none;
+    overflow-y: scroll;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  #EditorMainSec #preview-section label {
+    color: #e7e8e9;
+    margin-left: 20px;
+  }
+  #EditorMainSec #preview-section #preview {
+    border: 5px solid #01C38E;
+    border-radius: 10px;
+    background-color: #191E29;
+    color: #e7e8e9;
+    overflow-y: scroll;
+    padding: 10px;
+    height: 500px;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  #EditorMainSec .download-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #EditorMainSec .download-button .download-btn {
     font-size: 20px;
     background-color: #01C38E;
     color: #191E29;
@@ -245,87 +1061,358 @@ header main .navigation ul li a {
     border-radius: 10px;
     font-weight: bold;
     user-select: none;
+  }
+  #DashboardMainSec main .mainArea {
+    color: #e7e8e9;
+    margin-top: 150px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 40px;
+    flex-direction: column;
+    background-color: #191E29;
+    border: solid 5px #01C38E;
+    border-radius: 10px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .title {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #fileName {
+    border-radius: 8px;
+    width: 100%;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile {
+    font-size: 15px;
+    background-color: #01C38E;
+    color: #191E29;
+    padding: 8px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    user-select: none;
+    margin-top: 20px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 30px #00daa086;
+  }
+  footer {
+    background-color: #191E29;
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  footer main {
+    flex-direction: column;
+  }
+  footer main .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer main .footer-content .copyright span {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .copyright p {
+    display: flex;
+    color: #e7e8e9;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  footer main .footer-content .mg-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer main .footer-content .mg-logo img {
+    height: 40px;
+  }
+  footer main .footer-content .owner {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .owner img {
+    height: 20px;
+    display: flex;
+    color: #e7e8e9;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  #ErrorPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #01C38E;
+  }
+  #ErrorPage main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  #ErrorPage main .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #ErrorPage main .img-box .blob-svg {
+    height: 300px;
+  }
+  #ErrorPage main .img-box .blob-logo {
+    height: 150px;
+    position: absolute;
+  }
+  #ErrorPage .text-box {
+    margin-top: 50px;
+  }
+  #ErrorPage .text-box h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  #ErrorPage .text-box p {
+    font-size: 18px;
+  }
+  #ErrorPage .text-box a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #142C46;
+    background-color: #01C38E;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
   }
 }
 @media (max-width: 576px) {
-  #MainSec .side {
-    font-size: 20px;
+  header {
+    background-color: #191E29;
   }
-  #MainSec .side #mobile-buttons .markdown-button {
+  header main {
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  header main .logo {
+    align-items: center;
+  }
+  header main .logo a img {
+    height: 40px;
+  }
+  header main nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  header main nav .navigations ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  header main nav .navigations ul li {
+    font-size: 16px;
+    margin: 15px 0px 10px 40px;
+  }
+  header main nav .navigations ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #01C38E;
+    border-radius: 8px;
+    user-select: none;
+  }
+  header main #menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+  header main .mobil-nav-open {
+    background-color: #191E29;
+    border-top: 3px solid #01C38E;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 5px 10px 5px #00000088;
+    height: 15%;
+    width: 100%;
+    right: 0px;
+    top: 70px;
+  }
+  header main .mobil-nav-open .navigations {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  header main .mobil-nav-open .navigations ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+  }
+  header main .mobil-nav-open .navigations ul li {
+    flex-direction: column;
+    margin: 15px 0px;
+  }
+  header main .mobil-nav-open .navigations ul li a {
+    color: #01C38E;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #HomeMainSec main {
+    padding-top: 30px;
+  }
+  #HomeMainSec main .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+  }
+  #HomeMainSec main .side .left-side {
+    display: flex;
+  }
+  #HomeMainSec main .side .left-side .blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -1;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-svg {
+    width: 200px;
+  }
+  #HomeMainSec main .side .left-side .blob .blob-logo {
+    position: absolute;
+    height: 100px;
+  }
+  #HomeMainSec main .side .right-side {
+    margin-left: 10px;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e7e8e9;
+  }
+  #HomeMainSec main .side .right-side .main-text h1 span {
+    color: #01C38E;
+    font-weight: bolder;
+  }
+  #HomeMainSec main .side .right-side .main-text .paragraph p {
+    padding-right: 35px;
+    color: #e7e8e9;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  #HomeMainSec main .side .right-side .url {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  #HomeMainSec main .side .right-side .url a {
+    background-color: #191E29;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  #HomeMainSec main .side .right-side .url a img {
+    height: 23px;
+    width: 23px;
+  }
+  #EditorMainSec {
+    margin-bottom: 35px;
+  }
+  #EditorMainSec .side #mobile-buttons .markdown-button {
+    font-size: 15px;
     background-color: #01C38E;
     color: #191E29;
-    padding: 8px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 10px;
+    font-weight: bold;
   }
-  #MainSec .side #mobile-buttons .preview-button {
+  #EditorMainSec .side #mobile-buttons .preview-button {
+    font-size: 15px;
     background-color: #e7e8e9;
     color: #191E29;
     padding: 8px 20px;
     border: none;
     border-radius: 10px;
-  }
-  #MainSec .side label {
-    color: #e7e8e9;
-    margin-left: 20px;
-  }
-  #MainSec .side #markdown-section #markdown-input {
-    border: 5px solid #01C38E;
-    border-radius: 10px;
-    background-color: #191E29;
-    color: #e7e8e9;
-    height: 450px;
-    resize: none;
-    overflow-y: scroll;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  #MainSec #preview-section label {
-    color: #e7e8e9;
-    margin-left: 20px;
-  }
-  #MainSec #preview-section #preview {
-    border: 5px solid #01C38E;
-    border-radius: 10px;
-    background-color: #191E29;
-    color: #e7e8e9;
-    overflow-y: scroll;
-    padding: 10px;
-    height: 450px;
-    resize: none;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  #MainSec .text-end {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #MainSec .text-end #copyright {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    display: flex;
-    font-size: 13px;
-    text-align: left;
-    background-color: #191E29;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
-    border: 2px solid #01C38E;
-  }
-  #MainSec .text-end #copyright p {
-    display: flex;
-    color: #e7e8e9;
-    font-size: 30px;
     font-weight: bold;
-    margin: 0px;
-    padding: 0px;
-    user-select: none;
   }
-  #MainSec .text-end .download-button {
+  #EditorMainSec .side label {
+    font-size: 20px;
+    color: #e7e8e9;
+    margin-left: 20px;
+  }
+  #EditorMainSec .side #markdown-section #markdown-input {
+    border: 5px solid #01C38E;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #191E29;
+    color: #e7e8e9;
+    height: 400px;
+    resize: none;
+    overflow-y: scroll;
+    padding: 8px;
+    font-size: 16px;
+  }
+  #EditorMainSec #preview-section #preview {
+    border: 5px solid #01C38E;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #191E29;
+    color: #e7e8e9;
+    overflow-y: scroll;
+    padding: 10px;
+    height: 400px;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  #EditorMainSec .download-button {
+    text-align: end;
+  }
+  #EditorMainSec .download-button .download-btn {
     font-size: 20px;
     background-color: #01C38E;
     color: #191E29;
@@ -334,5 +1421,163 @@ header main .navigation ul li a {
     border-radius: 10px;
     font-weight: bold;
     user-select: none;
+  }
+  #DashboardMainSec {
+    margin-bottom: 28px;
+    height: 55vh;
+    bottom: 0px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area {
+    color: #e7e8e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 40px;
+    flex-direction: column;
+    background-color: #191E29;
+    border: solid 5px #01C38E;
+    border-radius: 10px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .title {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #fileName {
+    border-radius: 8px;
+    padding: 8px 20px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile {
+    font-size: 18px;
+    background-color: #01C38E;
+    color: #191E29;
+    padding: 8px 60px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    user-select: none;
+    margin-top: 20px;
+  }
+  #DashboardMainSec main .mainArea .file-creation-area .area .inputs #createFile:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 30px #00daa086;
+  }
+  footer {
+    background-color: #191E29;
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  footer main {
+    flex-direction: column;
+  }
+  footer main .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer main .footer-content .copyright span {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .copyright p {
+    display: flex;
+    color: #e7e8e9;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  footer main .footer-content .mg-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer main .footer-content .mg-logo img {
+    height: 30px;
+  }
+  footer main .footer-content .owner {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-color: #191E29;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #01C38E;
+  }
+  footer main .footer-content .owner img {
+    height: 15px;
+    display: flex;
+    color: #e7e8e9;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+  }
+  #ErrorPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #01C38E;
+  }
+  #ErrorPage main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  #ErrorPage main .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #ErrorPage main .img-box .blob-svg {
+    height: 250px;
+  }
+  #ErrorPage main .img-box .blob-logo {
+    height: 140px;
+    position: absolute;
+  }
+  #ErrorPage .text-box {
+    margin-top: 50px;
+  }
+  #ErrorPage .text-box h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  #ErrorPage .text-box p {
+    font-size: 18px;
+  }
+  #ErrorPage .text-box a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #142C46;
+    background-color: #01C38E;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
   }
 }
